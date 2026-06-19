@@ -118,4 +118,4 @@ _(Write 4–6 concrete, specific findings here as you go. Examples of the shape:
 ## Author
 
 Built as a contribution to the GenLayer Builder Program.
-GitHub: `<your handle>` · Portal: `<your portal profile>`
+GitHub: hieudao151093 · Portal: Solomon
