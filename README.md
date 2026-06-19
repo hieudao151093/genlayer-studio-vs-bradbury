@@ -20,13 +20,10 @@ GenLayer Explorer. No mock data.
 |---|---|---|
 | Network label in wallet header | `GenLayer Studio` | `GenLayer Bradbury` |
 | Where it runs | Local simulated env in your browser | Real decentralized validator set |
-| Counts toward Portal contributions | _<fill in after testing>_ | _<fill in after testing>_ |
-| Dependency header (`Depends`) | `py-genlayer:<studionet hash>` | `py-genlayer:<bradbury hash>` _(verify — may differ)_ |
+| Counts toward Portal contributions | No — local sandbox only | Yes — real on-chain activity tied to your wallet |
+| Dependency header (`Depends`) | `py-genlayer:1jb45aa8...09h6` (v0.2.16) | Same pinned hash worked unchanged |
 | LLM consensus | Simulated | Real multi-validator Optimistic Democracy |
 | Transaction permanence | Resets on Studio reset | Persisted on-chain (history may reset per testnet rules) |
-
-_(Fill each row from your own deployments. Replace every "fill in" with a real observation
-+ a transaction link.)_
 
 ---
 
@@ -38,10 +35,9 @@ is fully reproducible by anyone.
 
 | # | Contract | What it isolates |
 |---|---|---|
-| 1 | `storage.py` | Deterministic baseline — does a plain contract behave identically? |
-| 2 | `llm_erc20.py` (or `wizard_of_coin.py`) | Non-determinism — real LLM consensus vs simulated |
-| 3 | web-fetch example | Native web access behavior across environments |
-| 4 | `header_gotcha.py` | The `Depends` header version gotcha (the #1 newcomer deploy failure) |
+| 1 | `storage.py` | Deterministic baseline — plain contract, instant ACCEPTED |
+| 2 | `llm_erc20.py` | Intelligent Contract — `transfer` calls an LLM to validate the transaction |
+| 3 | `header_gotcha.py` | The `Depends` header version gotcha (the #1 newcomer deploy failure) |
 
 ---
 
@@ -160,4 +156,4 @@ contracts without issue. The wallet was never the problem — the simulation lay
 ## Author
 
 Built as a contribution to the GenLayer Builder Program.
-GitHub: `<your handle>` · Portal: `<your portal profile>`
+GitHub: [hieudao151093](https://github.com/hieudao151093) · Portal: Solomon · Wallet: `0x932CB99F3Da36A0Fbb6928248FF043b93FB88C9b`
