@@ -52,10 +52,15 @@ is fully reproducible by anyone.
 
 | Contract | Action | Environment | Tx hash / Explorer link | Result |
 |---|---|---|---|---|
-| storage | deploy | Bradbury | `<paste tx link>` | accepted |
+| storage | deploy | Bradbury | [`0x9e644fee...18bd63`](https://explorer-bradbury.genlayer.com/address/0xE54D423D0617dA51D62E533EFfaA86604907a22E) | ACCEPTED |
 | storage | update_storage | Bradbury | `<paste tx link>` | accepted |
 | llm_erc20 | deploy | Bradbury | `<paste tx link>` | accepted |
-| ... | ... | ... | ... | ... |
+| wizard_of_coin | deploy | Bradbury | `<paste tx link>` | accepted |
+
+**Deployed contract address (storage, Bradbury):** `0xE54D423D0617dA51D62E533EFfaA86604907a22E`
+**Creator / deployer wallet:** `0x932CB99F3Da36A0Fbb6928248FF043b93FB88C9b`
+**Deployment tx:** `0x9e644fee7c30326e72c1e31cf8226dac8896267f04998fc57a09c87f7f18bd63`
+**Network:** Testnet Bradbury (Phase 1) · **Status:** ACCEPTED · **Fee:** 0.00 GEN
 
 ---
 
